@@ -1,0 +1,29 @@
+{
+  "name": "hn-fire",
+  "version": "0.0.1",
+  "authors": [
+    "Jeremy Tymes <j.tymes@gmail.com>"
+  ],
+  "description": "Hacknews client built with their firebase API",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "angularjs": "v1.3.0-rc.4",
+    "firebase": "~1.1.0",
+    "angularfire": "~0.8.2",
+    "ui-router": "~0.2.11",
+    "foundation": "~5.4.5"
+  },
+  "resolutions": {
+    "firebase": "~1.1.0"
+  }
+}
