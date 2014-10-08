@@ -21,7 +21,8 @@
     "firebase": "~1.1.0",
     "angularfire": "~0.8.2",
     "ui-router": "~0.2.11",
-    "foundation": "~5.4.5"
+    "foundation": "~5.4.5",
+    "angular-animate": "~1.2.26"
   },
   "resolutions": {
     "firebase": "~1.1.0"
