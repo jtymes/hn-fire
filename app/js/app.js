@@ -8,12 +8,14 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 	$stateProvider.state('front', {
 		url: '/front',
 		templateUrl: 'views/frontpage.html',
-		controller: 'HNFront'
+		controller: 'FrontPageCtrl'
 	});
 
 	$stateProvider.state('itemdetail', {
 		url: '/item/:itemId',
 		templateUrl: 'views/itemDetail.html',
-		controller: 'HNComment'
+		controller: 'ItemDetailCtrl'
 	});
 }]);
+
+app.constant('API_URL', "https://hacker-news.firebaseio.com/v0/");

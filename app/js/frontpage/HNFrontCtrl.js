@@ -1,9 +1,7 @@
-app.controller('HNFront', ['$scope', '$firebase', '$filter', function($scope, $firebase, $filter) {
-	var baseUrl = "https://hacker-news.firebaseio.com/v0/";
-
-	var topStoriesUrl = baseUrl + 'topstories';
+app.controller('FrontPageCtrl', ['$scope', '$firebase', '$filter', 'API_URL', function($scope, $firebase, $filter, API_URL) {
+	var topStoriesUrl = API_URL + 'topstories';
 	var topStoriesRef = new Firebase(topStoriesUrl);
-	var itemUrl = baseUrl + 'item/';
+	var itemUrl = API_URL + 'item/';
 
 	$scope.topStories = $firebase(topStoriesRef).$asArray();
 

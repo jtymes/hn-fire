@@ -1,1 +1,7 @@
-Boop.
+<div class="row">
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.text }}</p>
+</div>
+<div class="row">
+  <item-comment ng-repeat="itemId in item.kids" comment-id="itemId"></item-comment>
+</div>
